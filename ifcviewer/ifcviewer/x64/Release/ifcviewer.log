@@ -1,0 +1,60 @@
+﻿生成启动时间为 2017/11/9 17:07:47。
+     1>项目“G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\ifcviewer\ifcviewer.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“x64\Release\ifcviewer.lastbuildstate”。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppClean.targets(74,5): warning : 对路径“G:\日本会议\IFCENGINEDLLV1.04 (BUILD 4000+)\C++\IFCVIEWER\X64\RELEASE\IFCVIEWER-C++_UNICODE_64BIT.EXE”的访问被拒绝。
+       InitializeBuildStatus:
+         正在创建“x64\Release\ifcviewer.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         F:\visual studio2010\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W4 /WX- /Od /Oi /GL /D WIN64 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"x64\Release\ifcviewer-C++_Unicode_64bit.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         F:\visual studio2010\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W4 /WX- /Od /Oi /GL /D WIN64 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"x64\Release\ifcviewer-C++_Unicode_64bit.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt camera.cpp generic.cpp GenericTreeItem.cpp headerInfo.cpp IFCEngineInteract.cpp ifcviewer.cpp ifcviewerDoc.cpp ifcviewerView.cpp LeftPane.cpp MainFrm.cpp material.cpp ProgressWnd.cpp RightPane.cpp unit.cpp vector.cpp
+         camera.cpp
+         generic.cpp
+         GenericTreeItem.cpp
+         headerInfo.cpp
+         IFCEngineInteract.cpp
+         ifcviewer.cpp
+         ifcviewerDoc.cpp
+         ifcviewerView.cpp
+         LeftPane.cpp
+         MainFrm.cpp
+         material.cpp
+         ProgressWnd.cpp
+         RightPane.cpp
+         unit.cpp
+         vector.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Release\ /nologo /fo"x64\Release\ifcviewer.res" ifcviewer.rc 
+       Link:
+         F:\visual studio2010\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Release\ifcviewer-C++_Unicode_64bit.exe" /INCREMENTAL:NO /NOLOGO .\ifcengine\lib\x64\ifcengine.lib .\dx9\lib\x64\d3dx9.lib .\dx9\lib\x64\d3d9.lib /MANIFEST /ManifestFile:"x64\Release\ifcviewer-C++_Unicode_64bit.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Release\ifcviewer-C++_Unicode_64bit.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Release\ifcviewer-C++_Unicode_64bit.lib" /MACHINE:X64 x64\Release\ifcviewer.res
+         x64\Release\camera.obj
+         x64\Release\generic.obj
+         x64\Release\GenericTreeItem.obj
+         x64\Release\headerInfo.obj
+         x64\Release\IFCEngineInteract.obj
+         x64\Release\ifcviewer.obj
+         x64\Release\ifcviewerDoc.obj
+         x64\Release\ifcviewerView.obj
+         x64\Release\LeftPane.obj
+         x64\Release\MainFrm.obj
+         x64\Release\material.obj
+         x64\Release\ProgressWnd.obj
+         x64\Release\RightPane.obj
+         x64\Release\stdafx.obj
+         x64\Release\unit.obj
+         x64\Release\vector.obj
+         正在生成代码
+     1>g:\日本会议\ifcenginedllv1.04 (build 4000+)\c++\ifcviewer\ifcviewer\leftpane.cpp(95): warning C4706: 条件表达式内的赋值
+         已完成代码的生成
+         ifcviewer.vcxproj -> G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Release\ifcviewer-C++_Unicode_64bit.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Release\ifcviewer-C++_Unicode_64bit.exe;#1" /manifest "x64\Release\ifcviewer-C++_Unicode_64bit.exe.intermediate.manifest" "F:\visual studio2010\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“x64\Release\ifcviewer.unsuccessfulbuild”。
+         正在对“x64\Release\ifcviewer.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\ifcviewer\ifcviewer.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:05.63
