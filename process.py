@@ -80,7 +80,14 @@ else:
 				# print("'{0}'('{1}', '{2}')".format(attr_name, guid, attr_dict[guid][attr_name]))
 				# print("\t'{0}' : '{1}'".format(attr_name, attr_dict[guid][attr_name]))
 			# print('}')
-				f2.write("'{0}'('{1}', '{2}').\n".format(attr_name, guid, attr_value))
+				if attr_name == '编号': # 编号不需要转成数值类型
+					f2.write("'{0}'('{1}', '{2}').\n".format(attr_name, guid, attr_value))
+					continue
+				try:
+					attr_value = float(attr_value)
+					f2.write("'{0}'('{1}', {2}).\n".format(attr_name, guid, attr_value))
+				except:
+					f2.write("'{0}'('{1}', '{2}').\n".format(attr_name, guid, attr_value))
 				f1.write("\t'{0}' : '{1}', \n".format(attr_name, attr_value))
 			f1.write('}' + '\n')
 	print('属性提取完成')
