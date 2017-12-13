@@ -46,5 +46,7 @@ protected:
 
 	afx_msg void OnAttrExtract(); // 属性提取函数定义
 
+	afx_msg void OnAttrExtractDirect(); // 直接属性提取函数定义
+
 	DECLARE_MESSAGE_MAP()
 };

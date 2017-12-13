@@ -47,7 +47,7 @@ else:
 				tmp = line.split(" '") # 有点tricky的属性获取方法
 				ifc_type = tmp[0]
 				guid = tmp[1][0: -1]
-				name = tmp[2][0: -1]
+				name = tmp[2][0: -1] if len(tmp) > 2 else ""
 				attr_dict[guid] = dict() # 存放guid的ifc实体属性的字典
 				attr_dict[guid]['IFC类型'] = ifc_type
 				attr_dict[guid]['GUID'] = guid

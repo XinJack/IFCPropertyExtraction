@@ -37,6 +37,7 @@ void CLeftPane::DoDataExchange(CDataExchange* pDX)
 }
 
 #define ID_ATTR_EXTRACT                 0xE139 // 很奇怪，需要在afxres.h和本文件同时定义ID_ATTR_EXTRACT才能使用
+#define ID_ATTR_EXTRACT_DIRECT			0xE138
 
 BEGIN_MESSAGE_MAP(CLeftPane, CTreeView)
 	ON_NOTIFY_REFLECT(NM_CLICK, OnClick)
@@ -46,7 +47,80 @@ BEGIN_MESSAGE_MAP(CLeftPane, CTreeView)
 	ON_NOTIFY_REFLECT(TVN_SELCHANGED, OnSelectionChanged) 
 
 	ON_COMMAND(ID_ATTR_EXTRACT, &CLeftPane::OnAttrExtract)
+	ON_COMMAND(ID_ATTR_EXTRACT_DIRECT, &CLeftPane::OnAttrExtractDirect)
 END_MESSAGE_MAP()
+
+
+// 直接提取属性 -> 目前仍然有问题
+void extractNode(STRUCT__SELECTABLE__TREEITEM *selectableTreeItem, CStdioFile *pFile)
+{
+	while(selectableTreeItem)
+	{
+		size_t i = 0;
+		// 增加guid的输出
+		wchar_t	* ifcType, * name, * description, *guid;
+		if	(selectableTreeItem->ifcObject  &&
+			 !equals(selectableTreeItem->ifcType, L"geometry")  &&
+			 !equals(selectableTreeItem->ifcType, L"properties")) {
+			ifcType = selectableTreeItem->ifcObject->ifcType;
+			name = selectableTreeItem->ifcObject->name;
+			description = selectableTreeItem->ifcObject->description;
+			guid = selectableTreeItem->ifcObject->globalId;
+		} else {
+			ifcType = selectableTreeItem->ifcType;
+			name = selectableTreeItem->name;
+			description = selectableTreeItem->description;
+			guid = selectableTreeItem->globalId;
+		}
+		if	(ifcType) {
+			memcpy(&selectableTreeItem->nameBuffer[i], ifcType, wcslen(ifcType) * sizeof(wchar_t)/sizeof(char));
+			i += wcslen(ifcType);
+		}
+		// 增加guid的输出
+		if(guid)
+		{
+			selectableTreeItem->nameBuffer[i++] = ' ';
+			selectableTreeItem->nameBuffer[i++] = '\'';
+			memcpy(&selectableTreeItem->nameBuffer[i], guid, wcslen(guid) * sizeof(wchar_t)/sizeof(char));
+			i += wcslen(guid);
+			selectableTreeItem->nameBuffer[i++] = '\'';
+		}
+		if	(name) {
+			selectableTreeItem->nameBuffer[i++] = ' ';
+			selectableTreeItem->nameBuffer[i++] = '\'';
+			memcpy(&selectableTreeItem->nameBuffer[i], name, wcslen(name) * sizeof(wchar_t)/sizeof(char));
+			i += wcslen(name);
+			selectableTreeItem->nameBuffer[i++] = '\'';
+		}
+		if	(description) {
+			selectableTreeItem->nameBuffer[i++] = ' ';
+			selectableTreeItem->nameBuffer[i++] = '(';
+			selectableTreeItem->nameBuffer[i++] = '\'';
+			memcpy(&selectableTreeItem->nameBuffer[i], description, wcslen(description) * sizeof(wchar_t)/sizeof(char));
+			i += wcslen(description);
+			selectableTreeItem->nameBuffer[i++] = '\'';
+			selectableTreeItem->nameBuffer[i++] = ')';
+		}
+		selectableTreeItem->nameBuffer[i] = 0;
+
+		pFile->WriteString(selectableTreeItem->nameBuffer);
+		pFile->WriteString(L"\n");
+
+		extractNode(selectableTreeItem->child, pFile);
+		selectableTreeItem = selectableTreeItem->next;
+	}
+}
+
+void CLeftPane::OnAttrExtractDirect()
+{
+	CStdioFile *pFile = new CStdioFile(L"C:\\Users\\Administrator\\Desktop\\test.txt", CFile::modeNoTruncate | CFile::modeCreate | CFile::modeWrite);
+	extractNode(baseTreeItem, pFile);
+	MessageBox(L"Done");
+	pFile->Close();
+}
+
+
+
 
 // 递归获取属性
 void extractAttr(CTreeCtrl *treePtr, HTREEITEM node, CStdioFile *pFile, int tabNum)
@@ -419,7 +493,7 @@ void CLeftPane::OnInitialUpdate()
 	if	(newFileName) {
 		newFileName = false;
 
-		BuildTreeItem(baseTreeItem, false);
+		BuildTreeItem(baseTreeItem, false); // 构建树结构
 	}
 }
 

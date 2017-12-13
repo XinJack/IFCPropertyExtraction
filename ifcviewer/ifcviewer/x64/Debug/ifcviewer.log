@@ -1,36 +1,18 @@
-﻿生成启动时间为 2017/11/9 17:09:59。
-     1>项目“G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\ifcviewer\ifcviewer.vcxproj”在节点 2 上(rebuild 个目标)。
-     1>_PrepareForClean:
-         正在删除文件“x64\Debug\ifcviewer.lastbuildstate”。
-       InitializeBuildStatus:
+﻿生成启动时间为 2017/11/14 10:14:57。
+     1>项目“G:\勇鑫-毕业论文\IFC属性扩展\IFCPRopertyExtraction\ifcviewer\ifcviewer\ifcviewer.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
          正在创建“x64\Debug\ifcviewer.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         F:\visual studio2010\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W4 /WX- /Od /D WIN64 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         F:\visual studio2010\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W4 /WX- /Od /D WIN64 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt camera.cpp generic.cpp GenericTreeItem.cpp headerInfo.cpp IFCEngineInteract.cpp ifcviewer.cpp ifcviewerDoc.cpp ifcviewerView.cpp LeftPane.cpp MainFrm.cpp material.cpp ProgressWnd.cpp RightPane.cpp unit.cpp vector.cpp
-         vector.cpp
-         unit.cpp
-         RightPane.cpp
-         ProgressWnd.cpp
-         material.cpp
-         MainFrm.cpp
+         所有输出均为最新。
+         F:\visual studio2010\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W4 /WX- /Od /D WIN64 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt LeftPane.cpp
          LeftPane.cpp
-         ifcviewerView.cpp
-         ifcviewerDoc.cpp
-         ifcviewer.cpp
-         IFCEngineInteract.cpp
-         headerInfo.cpp
-         GenericTreeItem.cpp
-         generic.cpp
-         camera.cpp
-         Generating Code...
-     1>g:\日本会议\ifcenginedllv1.04 (build 4000+)\c++\ifcviewer\ifcviewer\leftpane.cpp(95): warning C4706: 条件表达式内的赋值
+     1>g:\勇鑫-毕业论文\ifc属性扩展\ifcpropertyextraction\ifcviewer\ifcviewer\leftpane.cpp(169): warning C4706: 条件表达式内的赋值
        ResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Debug\ /nologo /fo"x64\Debug\ifcviewer.res" ifcviewer.rc 
+         所有输出均为最新。
        ManifestResourceCompile:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.embed.manifest.res" x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG_manifest.rc 
+         所有输出均为最新。
        Link:
-         F:\visual studio2010\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe" /INCREMENTAL /NOLOGO .\ifcengine\lib\x64\ifcengine.lib .\dx9\lib\x64\d3dx9.lib .\dx9\lib\x64\d3d9.lib /MANIFEST /ManifestFile:"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.lib" /MACHINE:X64 x64\Debug\ifcviewer.res
+         F:\visual studio2010\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\勇鑫-毕业论文\IFC属性扩展\IFCPRopertyExtraction\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe" /INCREMENTAL /NOLOGO .\ifcengine\lib\x64\ifcengine.lib .\dx9\lib\x64\d3dx9.lib .\dx9\lib\x64\d3d9.lib /MANIFEST /ManifestFile:"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\勇鑫-毕业论文\IFC属性扩展\IFCPRopertyExtraction\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\勇鑫-毕业论文\IFC属性扩展\IFCPRopertyExtraction\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.lib" /MACHINE:X64 x64\Debug\ifcviewer.res
          "x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.embed.manifest.res"
          x64\Debug\camera.obj
          x64\Debug\generic.obj
@@ -48,36 +30,18 @@
          x64\Debug\stdafx.obj
          x64\Debug\unit.obj
          x64\Debug\vector.obj
-         ifcviewer.vcxproj -> G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe
+         ifcviewer.vcxproj -> G:\勇鑫-毕业论文\IFC属性扩展\IFCPRopertyExtraction\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe
        Manifest:
-         正在删除文件“x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.embed.manifest”。
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.embed.manifest" /manifest "x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.intermediate.manifest" "F:\visual studio2010\VC\Include\Manifest\dpiaware.manifest"
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.embed.manifest.res" x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG_manifest.rc 
+         所有输出均为最新。
        LinkEmbedManifest:
-         F:\visual studio2010\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe" /INCREMENTAL /NOLOGO .\ifcengine\lib\x64\ifcengine.lib .\dx9\lib\x64\d3dx9.lib .\dx9\lib\x64\d3d9.lib /MANIFEST /ManifestFile:"x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.lib" /MACHINE:X64 x64\Debug\ifcviewer.res
-         "x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe.embed.manifest.res"
-         x64\Debug\camera.obj
-         x64\Debug\generic.obj
-         x64\Debug\GenericTreeItem.obj
-         x64\Debug\headerInfo.obj
-         x64\Debug\IFCEngineInteract.obj
-         x64\Debug\ifcviewer.obj
-         x64\Debug\ifcviewerDoc.obj
-         x64\Debug\ifcviewerView.obj
-         x64\Debug\LeftPane.obj
-         x64\Debug\MainFrm.obj
-         x64\Debug\material.obj
-         x64\Debug\ProgressWnd.obj
-         x64\Debug\RightPane.obj
-         x64\Debug\stdafx.obj
-         x64\Debug\unit.obj
-         x64\Debug\vector.obj
-         ifcviewer.vcxproj -> G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe
+         所有输出均为最新。
+         ifcviewer.vcxproj -> G:\勇鑫-毕业论文\IFC属性扩展\IFCPRopertyExtraction\ifcviewer\x64\Debug\ifcviewer-C++_Unicode_64bit_DEBUG.exe
        FinalizeBuildStatus:
          正在删除文件“x64\Debug\ifcviewer.unsuccessfulbuild”。
          正在对“x64\Debug\ifcviewer.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“G:\日本会议\IFCEngineDLLv1.04 (build 4000+)\C++\ifcviewer\ifcviewer\ifcviewer.vcxproj”(rebuild 个目标)的操作。
+     1>已完成生成项目“G:\勇鑫-毕业论文\IFC属性扩展\IFCPRopertyExtraction\ifcviewer\ifcviewer\ifcviewer.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:07.24
+已用时间 00:00:01.07
